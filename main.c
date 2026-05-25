@@ -35,7 +35,7 @@ void vehicleEntry(struct Vehicle *vehicle) {
     printf("Enter the vehicle type (1 for car, 2 for truck, etc.): ");
     scanf("%d", &vehicle->type);
 
-    printf("Vehicle entry recorded successfully!\n");
+    printf("Vehicle entry is recorded successfully!\n");
 }
 
 
@@ -44,7 +44,7 @@ struct Transaction vehicleExit(struct Vehicle vehicle) {
     transaction.vehicle = vehicle;
     transaction.fee = calculateFee(vehicle.type);
 
-    printf("Vehicle exit recorded successfully!\n");
+    printf("Vehicle exit is recorded successfully!\n");
     printf("Toll Fee: $%.2f\n", transaction.fee);
 
     return transaction;
@@ -132,7 +132,7 @@ int main() {
                 }
                 break;
             case 6:
-                printf("Exiting Toll Management System. Goodbye!\n");
+                printf("Exiting Toll Management System.bye!\n");
                 break;
             default:
                 printf("Invalid choice. Please try again.\n");
